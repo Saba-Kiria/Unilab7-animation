@@ -1,0 +1,37 @@
+body {
+	background-color: brown;
+}
+.night-drive {
+	height: 770px;
+    width: 100%;
+    border: 1px solid black;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+.div {
+	height: 150px;
+    width: 1200%;
+    background: url(../img/Img_02.png);
+    display: block;
+    position: absolute; 
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+    animation: right 6s linear infinite;
+}
+.vehicle {
+	position: absolute;
+    bottom: 3%;
+    left: 25%;
+    animation: vehicle1 1s linear infinite;
+}
+@keyframes right{
+    100%{transform: translate(-3000px)};
+}
+@keyframes vehicle1{
+    100%{transform: translateY(-1px);}
+    50%{transform: translateY(3px);}
+    0%{transform: translateY(-1px);}
+}
